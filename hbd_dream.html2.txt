@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Happy Birthday Dream</title>
+  <style>
+    body {
+      background: linear-gradient(135deg, #000428, #004e92);
+      color: white;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding-top: 80px;
+    }
+    h1 {
+      font-size: 40px;
+      animation: glow 1.5s infinite alternate;
+    }
+    h2 {
+      font-size: 30px;
+      margin-top: 20px;
+    }
+    button {
+      margin-top: 30px;
+      padding: 12px 25px;
+      font-size: 18px;
+      border: none;
+      border-radius: 8px;
+      background: #00c6ff;
+      color: black;
+      cursor: pointer;
+    }
+    @keyframes glow {
+      from { text-shadow: 0 0 10px #fff; }
+      to { text-shadow: 0 0 25px #00ffff; }
+    }
+  </style>
+</head>
+<body>
+
+<h1>🎉 HAPPY BIRTHDAY 🎉</h1>
+<h2>DREAM</h2>
+
+<p>Semoga panjang umur 🎂</p>
+<p>Sehat selalu 💪</p>
+<p>Semoga semua mimpimu tercapai ✨</p>
+
+<button onclick="playMusic()">▶ Putar Musik</button>
+
+<audio id="musik" loop>
+  <source src="https://cdn.pixabay.com/download/audio/2022/03/15/audio_5f3b7c6e3e.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+  function playMusic() {
+    document.getElementById("musik").play();
+  }
+</script>
+
+</body>
+</html>
